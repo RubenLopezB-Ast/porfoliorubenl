@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio Rubén López</title>
+        <meta name="description" content="Portafolio personal de Rubén López, donde poder observar todas las habilidades proyectos y sueños, currículum y contacto">
+        <meta name="keywords" content="Rubén López, Portafolio, E-mail, Currículim, Seguridad, Proyectos, DAM, programación">
+        <meta name="author" content="Rubén López">
+        <link rel="icon" href="imagenes/rLfabicon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/estyles.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja-header">
+                <h1 class="efecto-lupa">
+                    <span>R</span><span>u</span><span>b</span><span>é</span><span>n</span>
+                    <span>&nbsp;</span>
+                    <span>L</span><span>ó</span><span>p</span><span>e</span><span>z</span>
+                </h1>
+
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#curriculum">Currículum</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="menu-toggle"aria-label="Desplegar menú">&#9776;</button>
+        </header>
+        <main>
+            <section id="inicio" class="presentacion">
+                <div class="caja-presentacion">
+                    <div class="bloque-presentacion">
+                        <div class="texto-presentacion">
+                            <h2>Presentación</h2>
+                            <p>Tras muchos años dedicados al sector de la seguridad 
+                            privada y más de una década trabajando en una gran 
+                            factoría, decidí dar un giro a mi trayectoria 
+                            profesional y seguir una verdadera pasión: la 
+                            tecnología.</p><br>
+                            <p>Actualmente estoy cursando el Grado Superior de 
+                            Desarrollador de Aplicaciones Multiplataforma con toda la 
+                            ilusión del mundo, y también me estoy preparando para 
+                            realizar un máster en Ciberseguridad.</p><br>
+                            <p>Me encanta aprender, resolver problemas y construir 
+                            soluciones útiles. Este portfolio refleja ese camino 
+                            que he comenzado con entusiasmo y compromiso.</p>
+                        </div>
+                        <img src="imagenes/perfilDibujo.png" alt="Caricatura del Perfil de Rubén López" class="foto-perfil">
+                    </div>
+                </div>    
+            </section>
+            <section id="proyectos">
+                <h2>Proyectos</h2>
+                <div class="proyectos-grid">
+                    <div class="proyecto">
+                        <img src="imagenes/comemeLaHistoria.png" alt="Imagen de la web comemelahistoria realizada integramente en html por Rubén López">
+                        <p>Proyecto de HTML</p>
+                    </div>
+                    <div class="proyecto">
+                        <img src="imagenes/testPython.png" alt="Imagen de un proyecto de test en python realizado por Rubén López">
+                        <p>Proyecto de Python</p>
+                    </div>
+                    <div class="proyecto">
+                        <img src="imagenes/proyectoJava.png" alt="Imagen de un proyecto de una gestión de una coctelería realizado en java por Rubén López">
+                        <p>Proyecto de Java</p>
+                    </div>
+                    <div class="proyecto">
+                        <img src="imagenes/perfilGitHub.png" alt="Imagen del perfil de GitHub de Rubén López realizado con MarkDawn">
+                        <p>Proyecto GitHub (Markown)</p>
+                    </div>        
+                </div>
+            </section>
+            <section id="curriculum">
+                <h2>Currículum</h2>
+                <p>Mi trayectoria profesional comenzó en el ámbito de la seguridad 
+                privada, donde cuento con las habilitaciones oficiales de Vigilante 
+                de Seguridad, Vigilante de Explosivos y Escolta Privado. A lo largo 
+                de los años, he desempeñado funciones de vigilante, escolta, jefe 
+                de equipo e inspector, adquiriendo una gran responsabilidad, 
+                capacidad de gestión y trabajo bajo presión.</p><br>
+                <p>También tengo formación técnica con un Grado Medio en 
+                Electricidad, y desde hace más de una década trabajo como operario 
+                especialista en una reconocida factoría del sector automovilístico.</p><br>
+                <p>Esta sólida base profesional es la que me impulsa ahora a aplicar mi 
+                experiencia en un nuevo entorno: el desarrollo de software y la ciberseguridad, 
+                sectores en los que me estoy formando con entusiasmo.</p><br>
+            </section>
+            <section class="bloque-decorativo">
+                <div class="contenido-visual">
+                </div>
+            </section>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                 <form action="https://formsubmit.co/rlb210983@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+  </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-dentro">
+            <p><a href="politicaLegal.html">Politica de privacidad</a></p>
+            <p>© 2025 RLB</p>
+            </div>
+        </footer>
+        <div id="cookie-popup" class="cookie-popup">
+            <p>Estas galletitas son para mejorar tu experiencia pero tu decides</p>
+            <button id="aceptar-cookies">Acepto</button>
+        </div>
+        <button id="btn-volver-arriba" title="Volver arriba">⬆</button>
+        <script src="js/script.js"></script>
+     
+
+    </body>
+</html>

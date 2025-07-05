@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../imagenes/fondoClaro.jpg"); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 1em 1.5em;
+}
+
+header h1{
+    margin-bottom: 0.5em;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    margin-top: 2em;
+}
+
+.proyectos-grid{
+    background-color: white;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+    margin-top: 1em;
+    margin-left: 5em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1em;
+    border-radius: 10px;
+    background-color:transparent;
+
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 0.1em;
+  text-align: center;
+  z-index: 100;
+}
+
+.footer-dentro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-dentro a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-dentro p {
+  margin: 0;
+}
+
+@font-face {
+    font-family: "letraUno";
+    src: url("../fuentes/letrasUno.ttf.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "letraDos";
+    src: url("../fuentes/letrasDos.ttf.ttf") format("truetype");
+}
+
+body{
+    font-family: "letraDos", serif;
+}
+
+h1, h2, h3{
+    font-family: "letraUno", sans-serif;
+}
+
+#menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color:white;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    margin: 0;
+}
+
+/*Responsive*/
+@media (max-width: 768px){
+    nav ul{
+        flex-direction: column;
+        display: none;
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        padding: 1em 0;
+    }
+    nav ul.show{
+        display: flex;
+    }
+    #menu-toggle{
+        display: block;
+        margin-left: auto;
+    }
+    .caja-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.cookie-popup{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: #222;
+    color:white;
+    padding: 1em;
+    text-align: center;
+    z-index: 999;
+    display: none;
+}
+
+.cookie-popup a{
+    color: #4fc3f7;
+}
+
+.cookie-popup button{
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    background-color: #4fc3f7;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.foto-perfil{
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.caja-presentacion{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.foto-perfil{
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.texto-presentacion{
+    flex: 1;
+}
+
+/*Resonsive*/
+@media (max-width: 768px) {
+  .proyectos-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila */
+    padding-left: 0;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  #menu-toggle{
+    display: block;
+  }
+  header{
+    padding: 0.1px 1em;
+  }
+  
+  body {
+    background-image: url("../imagenes/fondoMovil.jpg");
+    background-attachment: scroll; 
+  }
+
+  .caja-presentacion .bloque-movil{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .foto-perfil{
+    margin-top: 1em;
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .texto-presentacion{
+    margin-top: 1em;
+  }
+
+  .bloque-presentacion{
+    flex-direction: column-reverse !important;
+    text-align: center;
+  }
+}
+
+
+/*Barra lateral*/
+body {
+  overflow-y: scroll;
+}
+
+.caja-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em 1em;
+}
+
+h1{
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 1; /*Para aliniar */
+    color: lightsalmon;
+}
+/*Forzar aliniación*/
+#menu-toggle {
+  transform: translateY(-45px); 
+}
+
+.bloque-presentacion{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-direction: row-reverse
+}
+
+header {
+  background-color: transparent;
+}
+
+footer{
+    background-color: transparent;
+    color: rebeccapurple;
+}
+
+nav a:hover {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.bloque-decorativo {
+  height: 7em; 
+  background-image: url("../imagenes/fondoMobil.png"); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  border-radius: 49%;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 600px;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: #ffffffcc;
+  border-radius: 10px;
+}
+
+#contacto input,
+#contacto textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+#contacto button {
+  padding: 0.8em;
+  background-color: #4fc3f7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+  background-color: #039be5;
+}
+
+#btn-volver-arriba {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #4fc3f7;
+  color: white;
+  border: none;
+  padding: 0.8em 1em;
+  border-radius: 50%;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 1s ease, background-color 0.3s ease;
+}
+
+#btn-volver-arriba:hover {
+  background-color: #039be5;
+  transform: scale(1.5);
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+.footer-dentro a {
+  color: #4fc3f7;
+}
+
+header h1 {
+  transition: transform 0.4s ease;
+  cursor: default;
+}
+
+header h1:hover {
+  transform: scale(1.2);
+}
+
+.efecto-lupa span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.efecto-lupa span:hover {
+  transform: scale(1.5);
+  color: #4fc3f7; 
+}
+.efecto-lupa span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.efecto-lupa span:hover {
+  transform: scale(1.5);
+  color: #4fc3f7; /* Opcional: cambia color al pasar */
+}
