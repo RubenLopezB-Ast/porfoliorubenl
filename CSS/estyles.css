@@ -206,6 +206,7 @@ h1, h2, h3{
   }
   #menu-toggle{
     display: block;
+    color: #039be5;
   }
   header{
     padding: 0.1px 1em;
