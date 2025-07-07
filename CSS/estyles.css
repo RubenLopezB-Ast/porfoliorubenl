@@ -4,17 +4,16 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("../imagenes/fondoClaro.jpg"); 
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    font-family: sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f5f5f5;
-    color: #333;
+body {
+  background-image: url("../imagenes/fondoClaro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "letraDos", serif;
+  line-height: 1.6;
+  padding: 20px;
+  color: #333;
 }
 
 header{
@@ -96,9 +95,7 @@ footer {
     src: url("../fuentes/letrasDos.ttf.ttf") format("truetype");
 }
 
-body{
-    font-family: "letraDos", serif;
-}
+
 
 h1, h2, h3{
     font-family: "letraUno", sans-serif;
@@ -215,7 +212,7 @@ h1, h2, h3{
   }
   
   body {
-    background-image: url("../imagenes/fondoMovil.jpg");
+    background-image: url("../imagenes/azul2movil.jpg");
     background-attachment: scroll; 
   }
 
@@ -243,10 +240,6 @@ h1, h2, h3{
 }
 
 
-/*Barra lateral*/
-body {
-  overflow-y: scroll;
-}
 
 .caja-header{
     display: flex;
